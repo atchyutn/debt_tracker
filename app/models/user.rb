@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# User model for user acconts
 class User < ApplicationRecord
   # model associations
   has_many :debts, dependent: :destroy

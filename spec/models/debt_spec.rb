@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 # Debt model test suite
@@ -15,5 +17,4 @@ RSpec.describe Debt, type: :model do
   it { should validate_presence_of(:months_left) }
   it { should validate_presence_of(:original_due) }
   it { should validate_presence_of(:emi_amount) }
-
 end
