@@ -5,6 +5,7 @@ RSpec.describe Category, type: :model do
   # association specs
   # ensure the Category model has 1:m payees through debts
   it { should have_many(:payees).through(:debts) }
+  it { should have_many(:debts) }
 
   # validation specs
   # ensure name column is present before saving
