@@ -1,7 +1,7 @@
 class Debt < ApplicationRecord
   # Model Associations
   belongs_to :user
-  belongs_to :category # TODO add category model 
+  belongs_to :category
   belongs_to :payee # TODO add payee model
 
   # Model Validations
